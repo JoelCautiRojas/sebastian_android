@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@android:id/tabhost"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/miLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:background="#eeeeee"
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff">
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ListView
+                    android:id="@+id/lista"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null"
+                    android:dividerHeight="0dp">
+
+                </ListView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ScrollView
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:layout_gravity="top|center"
+                        android:layout_width="310dp"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:background="#ffe358"
+                            android:gravity="center"
+                            android:text="INGRESAR PRODUCTOS NUEVOS"
+                            android:textColor="#1d1d1d" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#ddd"
+                                android:gravity="center"
+                                android:text="Marca:" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="#dddddd"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                                <EditText
+                                    android:id="@+id/nuevo_marca"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#fff"
+                                    android:inputType="textPersonName"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:text=""
+                                    android:textSize="13dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#ddd"
+                                android:gravity="center"
+                                android:text="Tipo:" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="#dddddd"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                                <EditText
+                                    android:id="@+id/nuevo_tipo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#fff"
+                                    android:inputType="textPersonName"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:text=""
+                                    android:textSize="13dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#ddd"
+                                android:gravity="center"
+                                android:text="Precio:" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="#dddddd"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                                <EditText
+                                    android:id="@+id/nuevo_precio"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#fff"
+                                    android:inputType="numberDecimal"
+                                    android:paddingLeft="6dp"
+                                    android:paddingRight="6dp"
+                                    android:text=""
+                                    android:textSize="13dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dp"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            android:weightSum="3">
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#ddd"
+                                android:gravity="center"
+                                android:text="Imagen:" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:background="#dddddd"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                                <com.github.snowdream.android.widget.SmartImageView
+                                    android:id="@+id/nuevo_imagen"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#f2f2f2"
+                                    android:scaleType="fitCenter"
+                                    android:src="@drawable/defecto" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/boton_guardar"
+                            android:layout_width="match_parent"
+                            android:layout_height="32dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_gravity="center"
+                            android:background="#393939"
+                            android:text="Guardar Datos"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:padding="5dp"
+                            android:text="NOTA:\nTamaño maximo permitido hasta 2Mb.\nFotografias en alta resolucion pueden tardar en subirse."
+                            android:textSize="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/tab3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="#ffffff">
+
+                <ScrollView
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:padding="10dp"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <TextView
+                                android:id="@+id/textView11"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="#dddddd"
+                                android:gravity="center"
+                                android:paddingLeft="5dp"
+                                android:paddingRight="5dp"
+                                android:text="Ingresar Id:" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_weight="5"
+                                android:background="#dddddd"
+                                android:orientation="vertical"
+                                android:padding="1dp">
+
+                                <EditText
+                                    android:id="@+id/mod_buscar_id"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="1dp"
+                                    android:gravity="center_vertical"
+                                    android:textSize="13dp"
+                                    android:background="#fff"
+                                    android:inputType="textPersonName"
+                                    android:padding="4dp"
+                                    android:text="" />
+
+                            </LinearLayout>
+
+                            <ImageButton
+                                android:id="@+id/buscar"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:background="#dddddd"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/buscar" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/mod_marca"
+                                android:layout_width="match_parent"
+                                android:layout_height="28dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#ffdc2a"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:inputType="textPersonName"
+                                android:padding="3dp"
+                                android:hint="Marca"
+                                android:textColor="#1d1d1d"
+                                android:textSize="13dp" />
+
+
+                            <EditText
+                                android:id="@+id/mod_tipo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="#aaa"
+                                android:ems="10"
+                                android:inputType="textPersonName"
+                                android:paddingBottom="5dp"
+                                android:paddingLeft="8dp"
+                                android:paddingRight="8dp"
+                                android:paddingTop="5dp"
+                                android:hint="Tipo"
+                                android:textColor="#fff"
+                                android:textSize="11dp" />
+
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="8">
+
+                            <com.github.snowdream.android.widget.SmartImageView
+                                android:id="@+id/mod_imagen"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="3"
+                                android:background="#f2f2f2"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/defecto" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="30dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:background="#fff"
+                                    android:orientation="horizontal"
+                                    android:weightSum="25">
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="8"
+                                        android:background="#fff"
+                                        android:gravity="center"
+                                        android:textColor="#717171"
+                                        android:text="Precio: S/."
+                                        android:textSize="12dp" />
+
+                                    <EditText
+                                        android:id="@+id/mod_precio"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="6"
+                                        android:background="#fff"
+                                        android:textColor="#717171"
+                                        android:ems="10"
+                                        android:gravity="center"
+                                        android:inputType="numberDecimal"
+                                        android:padding="5dp"
+                                        android:hint="0.00"
+                                        android:text=""
+                                        android:textSize="12dp" />
+
+                                    <TextView
+                                        android:layout_width="0dp"
+                                        android:textColor="#717171"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="11"
+                                        android:background="#fff"
+                                        android:gravity="center"
+                                        android:text="Nuevos Soles"
+                                        android:textSize="12dp" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginBottom="5dp"
+                            android:weightSum="2">
+
+                            <Button
+                                android:id="@+id/boton_modificar"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="#393939"
+                                android:text="Modificar"
+                                android:textColor="#fff" />
+
+                            <Button
+                                android:id="@+id/boton_eliminar"
+                                android:layout_width="0dp"
+                                android:layout_height="32dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_weight="1"
+                                android:background="#393939"
+                                android:text="Eliminar"
+                                android:textColor="#fff" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:padding="5dp"
+                            android:text="NOTA:\nTamaño maximo permitido hasta 2Mb.\nFotografias en alta resolucion pueden tardar en subirse."
+                            android:textSize="10dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</TabHost>
